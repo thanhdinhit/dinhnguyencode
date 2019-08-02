@@ -1,0 +1,40 @@
+import React from 'react';
+
+class LifeCycle extends React.Component {
+   componentWillMount() {
+      console.log('componentWillMount run');
+   }
+
+   componentDidMount() {
+      console.log('componentDidMount run');
+   }
+
+   constructor(props) {
+      super(props);
+      this.state = { statusMyself: 'Single' };
+      console.log('prop state run');
+   }
+
+
+   render() {
+      console.log('render run');
+      return (
+         <div>
+            <button className='button' onClick={() => this.setState({ statusMyself: 'Double' })}>ChangeStatusOF_ME</button>
+            <p>{this.state.color}</p>
+         </div>
+      );
+   }
+}
+
+export default LifeCycle;
+
+//follow init component in reactjs
+/*
+    Khởi tạo class đã kế thừa từ Component
+    Khởi tạo giá trị mặc định cho Props
+    Khởi tạo giá trị mặc định cho State
+    Gọi hàm componentWillMount()
+    Gọi hàm render()
+    Gọi hàm componentDidMount()
+*/
