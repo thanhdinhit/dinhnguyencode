@@ -12,6 +12,7 @@ import Ref from './Ref';
 import List from './List';
 import ParentComponent  from './ParentComponent';
 import ChildComponent  from './ChildComponent';
+import Form from './Form';
 import * as serviceWorker from './serviceWorker';
 
 
@@ -28,7 +29,7 @@ import * as serviceWorker from './serviceWorker';
 
 // setInterval(time, 1000);
 
-ReactDOM.render(<ParentComponent/>, document.getElementById('root'));
+ReactDOM.render(<Form/>, document.getElementById('root'));
 
 //set timeout to view componentWillUnmount
 // setTimeout(() => {
