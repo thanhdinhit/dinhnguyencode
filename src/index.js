@@ -4,15 +4,17 @@ import './index.css';
 // import App from './App';
  //import Demo from './Demo';
 // import State from './State';
- import EventHandling from './EventHandling';
+ //import EventHandling from './EventHandling';
  //import LifeCycle from './LifeCycle';
 //import ConditionnalRendering from './ConditionalRendering';
 //import LifeCycleD from './LifeCycleD';
-import Ref from './Ref';
-import List from './List';
-import ParentComponent  from './ParentComponent';
-import ChildComponent  from './ChildComponent';
-import Form from './Form';
+ //import Ref from './Ref';
+// import List from './List';
+// import ParentComponent  from './ParentComponent';
+// import ChildComponent  from './ChildComponent';
+// import Form from './Form';
+//import Validate from  './Validate';
+import Validate_B from './Validate_B';
 import * as serviceWorker from './serviceWorker';
 
 
@@ -29,7 +31,7 @@ import * as serviceWorker from './serviceWorker';
 
 // setInterval(time, 1000);
 
-ReactDOM.render(<Form/>, document.getElementById('root'));
+ReactDOM.render(<Validate_B/>, document.getElementById('root'));
 
 //set timeout to view componentWillUnmount
 // setTimeout(() => {
