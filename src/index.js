@@ -14,7 +14,8 @@ import './index.css';
 // import ChildComponent  from './ChildComponent';
 // import Form from './Form';
 //import Validate from  './Validate';
-import Validate_B from './Validate_B';
+//import ValidateB from './Validate_B';
+import LiftingStateUp from './LiftingStateUp';
 import * as serviceWorker from './serviceWorker';
 
 
@@ -31,7 +32,7 @@ import * as serviceWorker from './serviceWorker';
 
 // setInterval(time, 1000);
 
-ReactDOM.render(<Validate_B/>, document.getElementById('root'));
+ReactDOM.render(<LiftingStateUp/>, document.getElementById('root'));
 
 //set timeout to view componentWillUnmount
 // setTimeout(() => {

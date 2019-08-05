@@ -11,3 +11,7 @@
 // 			npm install validator
 // Ref:use Interactive UI element or element input user; use reference a node DOM or return a node it reference 
 //refs sẽ return về một node mà chúng ta tham chiếu đến. 
+//ref={element => { this.form = element } ==>React allows you to create a ref by passing a callback function to the ref attribute of a component
+//                                                The callback is used to store a reference to the DOM node in an instance property
+//Shared State: When we update an input, an other component should reflect the change (and vice versa)
+// lifting state up: share state to component origin nearest

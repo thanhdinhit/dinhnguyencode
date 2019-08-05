@@ -35,9 +35,9 @@ class Login extends Component {
     }
 
     onSubmit(e) {
-        e.preventDefault();
-        this.form.validateAll();
-
+        e.preventDefault(); // prevent page reload when clcik button submit
+        this.form.validateAll();//https://www.npmjs.com/package/react-validation
+        //validates all controls by marking all controls
         if (this.checkBtn.context._errors.length === 0) {
             console.log(this.state);
             alert('success');
@@ -60,7 +60,7 @@ class Login extends Component {
                     <div id="output"></div>
                     <div className="avatar"></div>
                     <div className="form-box">
-                        <Form onSubmit={e => this.onSubmit(e)} ref={c => { this.form = c }}>
+                        <Form onSubmit={e => this.onSubmit(e)} ref={form => { this.form = form }}> 
                             <Input
                                 name="email"
                                 onChange={this.onChangeHandler}
