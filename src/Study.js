@@ -15,3 +15,4 @@
 //                                                The callback is used to store a reference to the DOM node in an instance property
 //Shared State: When we update an input, an other component should reflect the change (and vice versa)
 // lifting state up: share state to component origin nearest
+//https://stackoverflow.com/questions/40329396/react-component-inheritance
