@@ -39,7 +39,7 @@ class ChildOther extends Child {
   render() {
     this.parentMethod() //calling parent method
     this.childMethod()
-    console.log("Method other")
+    console.log("Method child other")
     return false
   }
 }
