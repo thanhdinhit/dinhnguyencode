@@ -2,17 +2,22 @@ import React from 'react';
 
 class LifeCycle extends React.Component {
    componentWillMount() {
-      console.log('componentWillMount run');
+      console.log('componentWillMount run',this.props);
    }
 
    componentDidMount() {
-      console.log('componentDidMount run');
+      console.log('componentDidMount run',this.props);
    }
 
    constructor(props) {
       super(props);
       this.state = { statusMyself: 'Single' };
       console.log('prop state run');
+   }
+   componentWillReceiveProps()
+   {
+      console.log(this.props);
+      
    }
 
 
