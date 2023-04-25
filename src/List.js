@@ -39,6 +39,7 @@ class List extends React.Component {
         <br/>
         <h1>{this.state.products.map(product => 
           <li key={product.id}>Name: {product.name} - - - Price: {product.price} $ </li>)}
+          {/* <li key={product.id}>Name: {product.name} - - - Price: {product.price} $ </li>)} */}
         </h1>
 
       </div>
